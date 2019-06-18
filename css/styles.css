@@ -1,0 +1,202 @@
+/*  Brat Work Motorcycle Blog
+    Homepage
+
+    Author: Christopher Arias
+    Date:   June 17, 2019
+
+    Filename: styles.css
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: 0;
+}
+header{
+  background-position: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  padding-left: 7em;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+header a{
+  color: #000000;
+}
+/*main element*/
+main{
+  margin-left: 5em;
+  padding-left: 5em;
+}
+/*Start of nav elements*/
+ul {/*controls main navbar.*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background-color: rgb(30, 31, 33);
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  top: 0;
+  font-family: 'Domine', serif;
+
+}
+li{/*controls nav elements*/
+  color: #FFFFFF;
+}
+li a{
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  width: 100%;
+}
+li a:hover{
+  background-color: #990E0A;
+  color: white;
+}
+/*wrapper element to hold content*/
+.wrapper{
+  max-width: 900px;
+  min-width: 400px;
+  height: 994px;
+  padding-right: 3em;
+  background-color: #FFFFFF;
+  opacity: 0.5%;
+  background-position: center;
+  margin:auto;
+  text-align: center;
+}
+/*h2 element calls for google font*/
+h2{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+/*p element calls for google font*/
+p{
+  padding-bottom: 3em;
+  font-family: 'Merriweather', serif;
+}
+footer{
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #6F6F6F;
+  padding-left: 9em;
+  margin: 1em;
+}
+/*Lets elements be responsive to page.*/
+.responsive{
+  width: 100%;
+  height: auto;
+}
+/*Clock styling*/
+.main {
+  background-color: white;
+  height: 200px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  left: 50px;
+  position: relative;
+}
+
+.badge {
+  width: 96px;
+  color: black;
+  padding: 5px 10px;
+  font-family: 'Saira Extra Condensed';
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left:36%;
+  text-align: center;
+}
+
+.clock {
+  background-color: White;
+  color: black;
+  text-align: center;
+  font-size: 55px;
+  height: 100%;
+  padding-top: 25px;
+  font-family: 'Fjalla One', sans-serif;
+}
+/*photo for landing page image.*/
+#landing{
+  background-image: url(../images/landingPage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 800px;
+  min-width: 300px;
+  height: auto;
+  padding-bottom: 25em;
+}
+/*Blue scooter photo*/
+#blueScooter{
+  background-image: url(../images/blue-scooter.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 800px;
+  min-width: 300px;
+  height: auto;
+  padding-bottom: 25em;
+}
+/*logo white*/
+#logoWht{
+  background-image: url(../images/logoWht.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 90px;
+  height: auto;
+  padding: 2em;
+  overflow: auto;
+}
+/*logo black*/
+#logoBlk{
+  background-image: url(../images/logoBlk.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 100px;
+  height: auto;
+  padding: 2em;
+  overflow: auto;
+}
+#titleWht{
+  background-image: url(../images/titleWht.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: auto;
+  padding: 2em;
+  overflow: auto;
+}
+#titleBlk{
+  background-color: #FFFFFF;
+  background-image: url(../images/titleBlk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10em;
+}
