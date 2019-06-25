@@ -6,7 +6,7 @@
       Homepage
 
       Author: Christopher Arias
-      Date:   June 10, 2019
+      Date:   June 24, 2019
 
       Filename: gallery.htm
    -->
@@ -24,7 +24,7 @@
 
 <body>
   <!--calls to javascript scripts-->
-  <script src="P../js/scripts.js"></script>
+  <script src="../js/scripts.js"></script>
 
   <header>
     <a href="index.html"><div id="titleBlk" class="responsive, wrapper"></div></a>
@@ -42,6 +42,102 @@
   <div class="wrapper">
 
   <main>
+    <!--Start of gallery thumbnails-->
+    <div class="row">
+      <div class="column">
+        <img src="../images/thumbnails/group.jpg" onclick="openGallery()" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="../images/thumbnails/chopper.jpg" onclick="openGallery()" class="hover-shadow">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="../images/thumbnails/dirt.jpg" onclick="openGallery()" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="../images/thumbnails/cafe-racer.jpg" onclick="openGallery()" class="hover-shadow">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="../images/thumbnails/bmw.jpg" onclick="openGallery()" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="../images/thumbnails/war-bike.jpg" onclick="openGallery()" class="hover-shadow">
+      </div>
+    </div>
+    <!--Main Gallery-->
+    <div id="myGallery" class="gallery">
+      <div class="closeCursor" onclick="closeGallery()">CLOSE</div>
+      <div class="galleryContent">
+
+        <div class="mySlides">
+          <div id="numbertext">1/6</div>
+          <img src="../images/group.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div id="numbertext">2/6</div>
+          <img src="../images/chopper.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div id="numbertext">3/6</div>
+          <img src="../images/dirt.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div id="numbertext">4/6</div>
+          <img src="../images/cafe-racer.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div id="numbertext">5/6</div>
+          <img src="../images/bmw.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div id="numbertext">6/6</div>
+          <img src="../images/war-bike.jpg" style="width:100%">
+        </div>
+
+        <!--Controls-->
+        <div class="prev" onclick="plusSlides (-1)"> &#10094; </div>
+        <div class="next" onclick="plusSlides (1)"> &#10095; </div>
+
+        <!--Image Controls-->
+        <div class="column">
+          <img src="../images/thumbnails/group.jpg" alt="" onclick="currentSlide(1)"
+          class="demo">
+        </div>
+
+        <div class="column">
+          <img src="../images/thumbnails/chopper.jpg" alt="" onclick="currentSlide(2)"
+           class="demo">
+        </div>
+
+        <div class="column">
+          <img src="../images/thumbnails/dirt.jpg" alt="" onclick="currentSlide(3)"
+           class="demo">
+        </div>
+
+        <div class="column">
+          <img src="../images/thumbnails/cafe-racer.jpg" alt="" onclick="currentSlide(4)"
+           class="demo">
+        </div>
+
+        <div class="column">
+          <img src="../images/thumbnails/bmw.jpg" alt="" onclick="currentSlide(5)"
+           class="demo">
+        </div>
+
+        <div class="column">
+          <img src="../images/thumbnails/war-bike.jpg" alt="" onclick="currentSlide(6)"
+           class="demo">
+        </div>
+      </div>
+    </div>
 
   </main>
 
@@ -55,7 +151,7 @@
    document.getElementById("myGallery").style.display = "block";
  }
 
- // Close the gallery
+ // Close the Modal
  function closeGallery() {
    document.getElementById("myGallery").style.display = "none";
  }
