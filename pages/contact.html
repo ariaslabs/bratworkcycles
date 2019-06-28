@@ -43,11 +43,25 @@
 
   <main>
     <h2>Contact Us.</h2>
-    <p>
-      Here at Brat Work Cycles we get help though our sponsers.
-      If you would like to be a sponser or sponser a post email:<a "mailto: info@bratworkcycles.com">
-      info@bratworkcycles.com</a>.
-    </p>
+
+      <div id="error"></div>
+      <div id="thanks"></div>
+      <form id="form"/>
+        <div>
+          <label for="name">Name:</label>
+          <input id="name" name="name" type="text" required>
+        </div><br>
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" name="email" type="email" required>
+        </div><br>
+        <div>
+          <label for="textarea">Tell us somthing!:</label>
+          <textarea id="textarea"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+
     <div>
       <!--Caculator for sponser post amounts-->
       <h2>Sponser Post Caculator</h2>
@@ -67,7 +81,7 @@
       <!--submit button-->
       <fieldset id="submitbutton">
         <!--submut button has id and value-->
-        <input type="button" id="submit" value="Submit" />
+        <input type="button" id="submitOne" value="Submit" />
       </fieldset>
       </form>
     </div>
@@ -77,14 +91,6 @@
     Created by Christopher Arias
   </footer>
   </div>
-  <script>
-    function submitInfo() {
-      var amountA = document.getElementById("numberinput").value;//Getting value from number input
-      var amountB = "$" + (amountA * 125);//doing the math for caculation the amount a sponser cost
-      .innerHTML = amountB;//attempting to display var amountB
-    }
-    document.getElementById("submit") .addEventListener("click", submitInfo, false); //added a event listener
-    document.querySelector('.results').innerHTML = amountB;//another attempt to display
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
